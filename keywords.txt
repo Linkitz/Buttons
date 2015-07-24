@@ -3,3 +3,4 @@ read	KEYWORD2
 oneRead	KEYWORD2
 timerRead	KEYWORD2
 toggle	KEYWORD2
+readUP	KEYWORD2

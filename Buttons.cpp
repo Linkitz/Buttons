@@ -6,7 +6,17 @@ Buttons::Buttons(int pin){
 	_pin = pin;	
 }
 
-boolean Buttons::read(){
+boolean Buttons::readUP(){
+	
+	if(!tempReadUP && digitalRead(_pin))tempReadUP = true;		
+	else if(tempReadUP && !digitalRead(_pin)){
+	tempReadUP = false;
+	return true;		
+	}	
+	return false;	
+}
+
+boolean Buttons::readDown(){
 	return digitalRead(_pin);	
 }
 
