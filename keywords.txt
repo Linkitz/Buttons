@@ -2,3 +2,4 @@ Buttons	KEYWORD1
 read	KEYWORD2
 oneRead	KEYWORD2
 timerRead	KEYWORD2
+toggle	KEYWORD2

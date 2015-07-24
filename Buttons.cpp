@@ -10,6 +10,7 @@ boolean Buttons::read(){
 	return digitalRead(_pin);	
 }
 
+
 boolean Buttons::oneRead(){
 	boolean btnState=digitalRead(_pin);
 
@@ -21,6 +22,11 @@ boolean Buttons::oneRead(){
 	return false;		
 	}
 	
+}
+
+boolean Buttons::toggle(){
+	if(oneRead()) tempToggle=!tempToggle;
+	return tempToggle;
 }
 
 boolean Buttons::timerRead(unsigned long millisec){
